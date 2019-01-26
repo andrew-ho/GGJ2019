@@ -11,6 +11,7 @@ public class DataManager : MonoBehaviour
 
     void Awake()
     {
+        
         if (Instance == null)
         {
             Instance = this;
@@ -20,5 +21,7 @@ public class DataManager : MonoBehaviour
             Destroy(this);
         }
     }
+
+    
 
 }

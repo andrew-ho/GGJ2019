@@ -32,6 +32,6 @@ public class Gun : MonoBehaviour {
 	}
 
 	void Shoot() {
-		bulletPool.TryGetNextObject(transform.position, transform.rotation);
+		bulletPool.TryGetNextObject(transform.position+(3.0f*transform.forward), transform.rotation);
     }
 }
