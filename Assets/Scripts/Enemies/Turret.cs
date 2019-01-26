@@ -35,7 +35,11 @@ public class Turret : Enemy
     }
     void Shoot()
     {
-        transform.LookAt(DataManager.Instance.Player.transform.position);
+        Transform target = DataManager.Instance.Player.transform;
+        Vector3 targetPostition = new Vector3(target.position.x,
+                                       this.transform.position.y,
+                                       target.position.z);
+        this.transform.LookAt(targetPostition);
         enemyBulletPool.TryGetNextObject(transform.position + (3.0f * transform.forward), transform.rotation);
     }
 
