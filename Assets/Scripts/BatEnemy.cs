@@ -15,6 +15,7 @@ public class BatEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
+        base.Update();
         if (chase)
         {
             transform.LookAt(DataManager.Instance.Player.transform.position);
@@ -27,6 +28,16 @@ public class BatEnemy : Enemy
         {
             Vector3 tempos = Vector3.Lerp(transform.position, startPos, Time.deltaTime);
             this.transform.position = new Vector3(tempos.x,this.transform.position.y,tempos.z);
+        }
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.layer == 8)
+        {
+            health -= 1;
+            collider.gameObject.SetActive(false);
+            
         }
     }
 
