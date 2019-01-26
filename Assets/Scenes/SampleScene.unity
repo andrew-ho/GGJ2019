@@ -346,12 +346,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -672,12 +672,12 @@ PrefabInstance:
       propertyPath: ExitEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -998,12 +998,12 @@ PrefabInstance:
       propertyPath: ExitEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -1258,6 +1258,7 @@ MonoBehaviour:
   HitBox: {fileID: 0}
   health: 10
   chase: 0
+  shoot: 0
   type: 0
   speed: 500
 --- !u!195 &84357304
@@ -1714,12 +1715,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -1827,7 +1828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1860,7 +1861,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &194875469
@@ -2097,12 +2098,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -2210,7 +2211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2243,7 +2244,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1 &202043533
@@ -2372,7 +2373,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
 --- !u!1001 &372153322
@@ -2609,12 +2610,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -2679,7 +2680,6 @@ Transform:
   - {fileID: 1187400338}
   - {fileID: 57030791}
   - {fileID: 1588928588}
-  - {fileID: 722868793}
   - {fileID: 910513750}
   - {fileID: 1520102821}
   - {fileID: 425905749}
@@ -2690,6 +2690,7 @@ Transform:
   - {fileID: 657113529}
   - {fileID: 1418769461}
   - {fileID: 504039779}
+  - {fileID: 878465866}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2740,7 +2741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2773,7 +2774,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &469128068
@@ -3085,12 +3086,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -3391,12 +3392,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -3510,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3543,7 +3544,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a2b0f8f740adbda49831ee41f509cd76, type: 2}
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &528777428
@@ -3800,12 +3801,12 @@ PrefabInstance:
       propertyPath: ExitEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -4249,12 +4250,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -4555,12 +4556,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -4734,12 +4735,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!4 &722868793 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787,
-    type: 3}
-  m_PrefabInstance: {fileID: 1448078488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &743488132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,6 +4973,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50220d67efe4a746858798eb7f0166a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &878465865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 406535145}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_Name
+      value: rugSquare (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 83.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.465385
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
+--- !u!4 &878465866 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787,
+    type: 3}
+  m_PrefabInstance: {fileID: 878465865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &880401149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5212,12 +5282,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -5616,12 +5686,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -6006,12 +6076,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -6152,7 +6222,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a2b0f8f740adbda49831ee41f509cd76, type: 2}
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!4 &1187400338 stripped
@@ -6228,6 +6298,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
+    - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9baf753720245094aa7987926cdd73f3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
 --- !u!1001 &1241803622
@@ -6304,7 +6382,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
 --- !u!1001 &1247942122
@@ -6381,7 +6459,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &1309885901
@@ -6425,7 +6503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6527,7 +6605,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 984250d1d9f181e458400ac64b441489, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!4 &1314611362 stripped
@@ -6583,7 +6661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6845,12 +6923,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -7157,12 +7235,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -7229,83 +7307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50220d67efe4a746858798eb7f0166a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1448078488
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 406535145}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_Name
-      value: rugSquare (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 84.15698
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.465385
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 29.099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9baf753720245094aa7987926cdd73f3, type: 2}
-    - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a2b0f8f740adbda49831ee41f509cd76, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &1493374755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7540,12 +7541,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -7653,7 +7654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8002,12 +8003,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -8195,7 +8196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8228,7 +8229,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a2b0f8f740adbda49831ee41f509cd76, type: 2}
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!4 &1857767151 stripped
@@ -8455,6 +8456,7 @@ MonoBehaviour:
   HitBox: {fileID: 0}
   health: 10
   chase: 0
+  shoot: 0
   type: 0
   speed: 0
 --- !u!65 &1995749235
@@ -8716,12 +8718,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -8829,7 +8831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8858,11 +8860,11 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b1caad97544771342aab1999b95bfe2b, type: 2}
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
     - target: {fileID: 2300000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 64b5e8f806113a34e923417a881e9c6c, type: 2}
+      objectReference: {fileID: 2100000, guid: 9baf753720245094aa7987926cdd73f3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54e2a47040045fd46a31b9d2f1e81209, type: 3}
 --- !u!1001 &2102805190
@@ -8939,7 +8941,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a2b0f8f740adbda49831ee41f509cd76, type: 2}
+      objectReference: {fileID: 2100000, guid: c44f9eb7746703242a2028ab88782506, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
 --- !u!1001 &2104774635
@@ -9176,12 +9178,12 @@ PrefabInstance:
       propertyPath: EnterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -9282,6 +9284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf7b025ce83afb45b90a6a693fedf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterHealth: 50
   moveSpeed: 30
   rb: {fileID: 2107654492}
 --- !u!114 &2107654494
@@ -9566,12 +9569,12 @@ PrefabInstance:
       propertyPath: ExitEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
@@ -9679,7 +9682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2075ad790b442ce45a088823e4cb0787, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9796,12 +9799,12 @@ PrefabInstance:
       propertyPath: roomView
       value: 
       objectReference: {fileID: 979850685}
-    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3902547896571088160, guid: 132d543f5acced04ca7c654e1440d5ef,
+    - target: {fileID: 4589677390817942260, guid: 132d543f5acced04ca7c654e1440d5ef,
         type: 3}
       propertyPath: doNotRenderDoor
       value: 1
