@@ -1394,6 +1394,7 @@ MonoBehaviour:
   postProcess: {fileID: 11400000, guid: b48fb4c344d1e5148a580ce989d0a8eb, type: 2}
   image: {fileID: 766205645}
   fill: 0
+  Velocity: 1
 --- !u!1001 &1995749231
 PrefabInstance:
   m_ObjectHideFlags: 0

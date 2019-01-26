@@ -11,6 +11,8 @@ public class TempControl : MonoBehaviour
 
     public Image image;
     public float fill = 0;
+    public float Velocity = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +22,16 @@ public class TempControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        postProcess.GetSetting<ColorGrading>().temperature.Override(fill*100-50);
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (fill < 100)
-            {
-                fill += .01f;
-                fill = Mathf.Clamp(fill , 0, 1);
-            }
+            Velocity = -Velocity;
         }
+        postProcess.GetSetting<ColorGrading>().temperature.Override(fill*100-50);
+        fill += 0.3f*(Velocity - (0.99f * (fill - 0.5f)))*Time.deltaTime;
+        fill = Mathf.Clamp(fill, 0, 1);
         image.fillAmount = fill;
+        image.color = new Color(Mathf.Lerp(0,1,fill),0,Mathf.Lerp(0,1,1.0f-fill));
+        
         
     }
 }
