@@ -38,6 +38,10 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveVelocity;
+        //rb.velocity = moveVelocity;
+        //Vector3 moveDirection = moveVelocity;
+        //moveDirection = moveDirection.normalized;
+        moveVelocity *= Time.deltaTime;
+        rb.MovePosition(transform.position + moveVelocity);
     }
 }
