@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 92872561}
   - component: {fileID: 92872565}
   - component: {fileID: 92872566}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9290,6 +9290,8 @@ MonoBehaviour:
   characterHealth: 50
   moveSpeed: 30
   rb: {fileID: 2107654492}
+  Velocity: {x: 0, y: 0, z: 0}
+  PreviousPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2107654494
 MonoBehaviour:
   m_ObjectHideFlags: 0
