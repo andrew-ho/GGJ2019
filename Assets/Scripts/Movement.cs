@@ -71,7 +71,11 @@ public class Movement : MonoBehaviour
             Invulnerable = true;
             StartCoroutine(WaitForIt());
         }
-
+        if (collision.collider.GetComponent<Fire>() != null)
+        {
+            characterHealth -= 5;
+            Destroy(collision.gameObject);
+        }
         
     }
 

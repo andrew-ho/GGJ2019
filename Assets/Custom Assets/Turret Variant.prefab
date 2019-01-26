@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitBox: {fileID: 0}
-  health: 0
+  health: 3
   chase: 0
   shoot: 0
   type: 1
@@ -28,7 +28,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100004, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
       propertyPath: m_Name
-      value: Turret
+      value: Turret Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74,6 +74,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75f5c1fe729cf7e44ae4b10314ff9340, type: 2}
+    - target: {fileID: 2300002, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75f5c1fe729cf7e44ae4b10314ff9340, type: 2}
+    - target: {fileID: 2300002, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c36c78e1df035c1418dcca62407f92bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b58f3655b90b749b876b7ea1ad1391, type: 3}
 --- !u!1 &684763907896153976 stripped

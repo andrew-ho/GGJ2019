@@ -39,16 +39,16 @@ public class Turret : Enemy
         Vector3 targetPostition = new Vector3(target.position.x,
                                        this.transform.position.y,
                                        target.position.z);
-        this.transform.LookAt(targetPostition);
-        enemyBulletPool.TryGetNextObject(transform.position + (3.0f * transform.forward), transform.rotation);
+        this.transform.GetChild(1).LookAt(targetPostition);
+        enemyBulletPool.TryGetNextObject(transform.position + (3.0f * transform.GetChild(1).forward), transform.GetChild(1).rotation);
     }
 
-    void OnTriggerEnter(Collider collider)
+    void OnCollisionEnter(Collision collision)
     {
-        if (collider.gameObject.layer == 8)
+        if (collision.collider.gameObject.layer == 8)
         {
             health -= 1;
-            collider.gameObject.SetActive(false);
+            collision.collider.gameObject.SetActive(false);
 
         }
     }

@@ -30,7 +30,6 @@ public class Enemy_Bullet : MonoBehaviour
     void BulletPatternNormal()
     {
         //target = GameObject.Find("Player");
-        target = DataManager.Instance.Player;
         //target = GameObject.Find("PlayerCharacter");
         rb.velocity = Vector3.zero;
         rb.AddForce(transform.forward * bulletInitialVelocity);
