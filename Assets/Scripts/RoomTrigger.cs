@@ -64,13 +64,12 @@ public class RoomTrigger : MonoBehaviour
     {
         EnterEvent.Invoke();
         cam.transform.parent = this.gameObject.transform.parent.transform.parent;
-        //moveCamera = true;
         cam.transform.position = roomView.transform.position;
-        active = true;
         foreach (Enemy enemy in enemies)
         {
             enemy.chase = true;
         }
+        active = true;
 
     }
 }
