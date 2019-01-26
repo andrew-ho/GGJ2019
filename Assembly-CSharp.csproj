@@ -68,9 +68,12 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\BatEnemy.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\RoomTrigger.cs" />
     <Compile Include="Assets\Scripts\TempControl.cs" />
     <None Include="Assets\Kenney Assets\Furniture Pack\License.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

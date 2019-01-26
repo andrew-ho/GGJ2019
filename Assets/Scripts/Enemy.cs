@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public Collider HitBox;
     public int health;
+    public bool chase;
     // Start is called before the first frame update
     void Start()
     {
