@@ -25,7 +25,8 @@ public class BatEnemy : Enemy
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, startPos, Time.deltaTime);
+            Vector3 tempos = Vector3.Lerp(transform.position, startPos, Time.deltaTime);
+            this.transform.position = new Vector3(tempos.x,this.transform.position.y,tempos.z);
         }
     }
 
