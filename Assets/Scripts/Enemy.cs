@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public Collider HitBox;
     public int health;
     public bool chase;
-
+    public EnemyType type;
     public enum EnemyType
     {
         CHASING,

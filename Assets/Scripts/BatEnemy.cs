@@ -6,8 +6,7 @@ using UnityEngine.AI;
 public class BatEnemy : Enemy
 {
     private Vector3 startPos;
-    public EnemyType type = EnemyType.CHASING;
-
+    
     public int speed;
 
     // Start is called before the first frame update

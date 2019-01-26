@@ -53,7 +53,10 @@ public class RoomTrigger : MonoBehaviour
         {
             foreach (Enemy enemy in enemies)
             {
-                enemy.chase = false;
+                if (enemy.type == Enemy.EnemyType.CHASING)
+                {
+                    enemy.chase = false;
+                }
             }
         }
     }
