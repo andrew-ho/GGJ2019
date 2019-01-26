@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50220d67efe4a746858798eb7f0166a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRenderDoor: 0
+  doNotRenderDoor: 1
   moveCamera: 0
   roomView: {fileID: 535749193}
 --- !u!65 &4589677390817942259
@@ -1346,6 +1346,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9e7dbf38079f5714aaaebfec814c11d6, type: 3}
       propertyPath: m_Name
       value: floorFull
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9e7dbf38079f5714aaaebfec814c11d6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9e7dbf38079f5714aaaebfec814c11d6, type: 3}
       propertyPath: m_LocalPosition.x
