@@ -70,8 +70,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\NamedBools.cs" />
-    <Compile Include="Assets\Scripts\Room.cs" />
+    <Compile Include="Assets\Scripts\TempControl.cs" />
     <None Include="Assets\Kenney Assets\Furniture Pack\License.txt" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -350,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &673272948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.66
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -793,6 +793,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1833759521475624765, guid: 132d543f5acced04ca7c654e1440d5ef, type: 3}
+    - {fileID: 237916034, guid: 132d543f5acced04ca7c654e1440d5ef, type: 3}
+    - {fileID: 1833759521353325479, guid: 132d543f5acced04ca7c654e1440d5ef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 132d543f5acced04ca7c654e1440d5ef, type: 3}
 --- !u!1 &1934467271
 GameObject:
@@ -803,6 +805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934467272}
+  - component: {fileID: 1934467273}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -824,6 +827,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1934467273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934467271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768dfdf85229ccf42969d08c85137234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1047300728}
+  fill: 0
 --- !u!1 &2107654491 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 20ee435741924a54da4e1ac0ed0577dc,

@@ -23,7 +23,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        Debug.Log(moveInput);
         moveVelocity = moveInput * moveSpeed;
 
         Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
