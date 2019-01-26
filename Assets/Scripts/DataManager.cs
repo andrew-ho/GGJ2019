@@ -9,6 +9,8 @@ public class DataManager : MonoBehaviour
 
     public GameObject Player;
 
+    public TempControl Temperature;
+
     void Awake()
     {
         
