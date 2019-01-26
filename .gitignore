@@ -1,6 +1,7 @@
-/Library
+[Ll]ibrary/
+[Tt]emp/
 /Packages
 /ProjectSettings
-/Temp
 /Logs
+/Temp/ProcessJobs
 *.meta
