@@ -15,6 +15,12 @@ public class Movement : MonoBehaviour
     private Camera mainCamera;
     private bool Invulnerable = false;
 
+    public Vector3 Velocity = Vector3.zero;
+    public Vector3 PreviousPosition;
+
+    private float time = 99f;
+    private bool dashing;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +32,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Invulnerable)
+        if (Invulnerable&&!dashing)
         {
             if (this.GetComponent<Renderer>().enabled == true)
             {
@@ -43,6 +49,11 @@ public class Movement : MonoBehaviour
         }
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput * moveSpeed;
+        if (Input.GetButton("Fire2")&&time>1.5f) {
+            time = 0;
+            
+        }
+      
 
         Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
@@ -52,6 +63,8 @@ public class Movement : MonoBehaviour
             Vector3 pointToLook = cameraRay.GetPoint(rayLength);
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
+
+        time += Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -60,7 +73,8 @@ public class Movement : MonoBehaviour
         //Vector3 moveDirection = moveVelocity;
         //moveDirection = moveDirection.normalized;
         moveVelocity *= Time.deltaTime;
-        rb.MovePosition(transform.position + moveVelocity);
+        this.transform.position += moveVelocity;
+        Velocity = moveVelocity;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -84,7 +98,10 @@ public class Movement : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         Invulnerable = false;
         this.GetComponent<Renderer>().enabled = true;
+        dashing = false;
     }
+
+
     public void GameOver()
     {
 

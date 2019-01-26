@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour {
 	
 	void Update () {
 		//can fire every [shotDelay] seconds while right click is held
-		if (Input.GetButton("Fire2") && time > shotDelay) {
+		if (Input.GetButton("Fire1") && time > shotDelay) {
             Shoot();
             time = 0;
         }
@@ -32,6 +32,6 @@ public class Gun : MonoBehaviour {
 	}
 
 	void Shoot() {
-		bulletPool.TryGetNextObject(transform.position+(3.0f*transform.forward), transform.rotation);
+		bulletPool.TryGetNextObject(transform.position, transform.rotation);
     }
 }
