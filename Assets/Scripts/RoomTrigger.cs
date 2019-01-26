@@ -55,7 +55,14 @@ public class RoomTrigger : MonoBehaviour
         {
             foreach (Enemy enemy in enemies)
             {
-                enemy.chase = false;
+                if (enemy.type == Enemy.EnemyType.CHASING)
+                {
+                    enemy.chase = false;
+                }
+                else if (enemy.type == Enemy.EnemyType.STATIONARY)
+                {
+                    enemy.shoot = false;
+                }
             }
         }
     }
@@ -67,7 +74,14 @@ public class RoomTrigger : MonoBehaviour
         cam.transform.position = roomView.transform.position;
         foreach (Enemy enemy in enemies)
         {
-            enemy.chase = true;
+            if (enemy.type == Enemy.EnemyType.CHASING)
+            {
+                enemy.chase = true;
+            }
+            else if (enemy.type == Enemy.EnemyType.STATIONARY)
+            {
+                enemy.shoot = true;
+            }
         }
         active = true;
 

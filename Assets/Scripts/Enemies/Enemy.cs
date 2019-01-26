@@ -7,7 +7,8 @@ public class Enemy : MonoBehaviour
     public Collider HitBox;
     public int health;
     public bool chase;
-
+    public bool shoot;
+    public EnemyType type;
     public enum EnemyType
     {
         CHASING,
@@ -23,7 +24,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (health < 1)
+        if (health <= 0)
         {
             Destroy(this.gameObject);
         }
