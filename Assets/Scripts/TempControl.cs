@@ -26,7 +26,7 @@ public class TempControl : MonoBehaviour
         {
             Velocity = -Velocity;
         }
-        postProcess.GetSetting<ColorGrading>().temperature.Override(fill*100-50);
+        postProcess.GetSetting<ColorGrading>().temperature.Override(fill*150-60);
         fill += 0.3f*(Velocity - (0.99f * (fill - 0.5f)))*Time.deltaTime;
         fill = Mathf.Clamp(fill, 0, 1);
         image.fillAmount = fill;
