@@ -16,6 +16,7 @@ public class TempControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (Input.GetKey(KeyCode.E))
         {
             if (fill < 100)
