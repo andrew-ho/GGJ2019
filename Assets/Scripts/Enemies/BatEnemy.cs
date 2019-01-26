@@ -36,7 +36,7 @@ public class BatEnemy : Enemy
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.layer == 8)
+        if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
         {
             health -= 1;
             collider.gameObject.SetActive(false);
