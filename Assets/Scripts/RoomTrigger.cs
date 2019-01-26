@@ -10,10 +10,12 @@ public class RoomTrigger : MonoBehaviour
     public Enemy[] enemies;
     int numEnemies;
     private bool active;
+    private Camera cam;
+    public GameObject roomView;
     // Start is called before the first frame update
     void Start()
     {
-
+        cam = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
@@ -61,10 +63,14 @@ public class RoomTrigger : MonoBehaviour
     private void Enter()
     {
         EnterEvent.Invoke();
+        cam.transform.parent = this.gameObject.transform.parent.transform.parent;
+        //moveCamera = true;
+        cam.transform.position = roomView.transform.position;
         active = true;
         foreach (Enemy enemy in enemies)
         {
             enemy.chase = true;
         }
+
     }
 }

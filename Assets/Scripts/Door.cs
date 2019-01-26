@@ -11,7 +11,7 @@ public class Door : MonoBehaviour
 
     private void Awake()
     {
-        cam = FindObjectOfType<Camera>();
+       
         if (doNotRenderDoor)
         {
             GetComponent<MeshRenderer>().enabled = false;
@@ -19,26 +19,16 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Open()
     {
-        if (other.tag == "Player")
-        {
-            cam.transform.parent = this.gameObject.transform.parent.transform.parent;
-            //moveCamera = true;
-            cam.transform.position = roomView.transform.position;
-        }
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().isTrigger = true;
     }
 
-    private void Update()
+    public void Close()
     {
-        if (moveCamera)
-        {
-            MoveCam();
-        }
+        GetComponent<MeshRenderer>().enabled = true;
+        GetComponent<BoxCollider>().isTrigger = false;
     }
 
-    public void MoveCam()
-    {
-        cam.transform.position = Vector3.Lerp(cam.transform.position, roomView.transform.position, Time.deltaTime);
-    }
 }
