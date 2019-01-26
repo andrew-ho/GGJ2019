@@ -16,7 +16,7 @@ public class TempControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        DataManager.Instance.Temperature = this;
     }
 
     // Update is called once per frame

@@ -7,6 +7,9 @@ public class BatEnemy : Enemy
 {
     private Vector3 startPos;
     public EnemyType type = EnemyType.CHASING;
+
+    public int speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +25,7 @@ public class BatEnemy : Enemy
             transform.LookAt(DataManager.Instance.Player.transform.position);
             Vector3 EnemyPosition = this.transform.position;
             Vector3 position = DataManager.Instance.Player.transform.position;
-            Vector2 CartesianPosition = Vector2.Lerp(new Vector2(EnemyPosition.x, EnemyPosition.z), new Vector2(position.x, position.z), Time.deltaTime);
+            Vector2 CartesianPosition = Vector2.Lerp(new Vector2(EnemyPosition.x, EnemyPosition.z), new Vector2(position.x, position.z), Time.deltaTime*speed);
             this.transform.position = new Vector3(CartesianPosition.x, EnemyPosition.y, CartesianPosition.y);
         }
         else
