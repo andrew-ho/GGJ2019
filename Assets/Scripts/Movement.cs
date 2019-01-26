@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DataManager.Instance.Player = this.gameObject;
         rb = GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>();
     }
