@@ -25,6 +25,18 @@ public class Turret : Enemy
     // Update is called once per frame
     void Update()
     {
+        if (TempControl.fill == 0)
+        {
+            shotDelay = .6f;
+        }
+        else if (TempControl.fill == 1)
+        {
+            shotDelay = .01f;
+        }
+        else
+        {
+            shotDelay = .3f;
+        }
         if (shoot && time > shotDelay)
         {
             Shoot();
@@ -45,11 +57,24 @@ public class Turret : Enemy
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.layer == 8)
+        if (LayerMask.LayerToName(collision.collider.gameObject.layer) == "Bullet")
         {
-            health -= 1;
-            collision.collider.gameObject.SetActive(false);
-
+            if (TempControl.fill > 0 && TempControl.fill < 1)
+            {
+                health -= 1;
+                collision.collider.gameObject.SetActive(false);
+            }
+            else if (TempControl.fill == 0)
+            {
+                health -= .5f;
+                collision.collider.gameObject.SetActive(false);
+            }
+            else if (TempControl.fill == 1)
+            {
+                health -= 2f;
+                collision.collider.gameObject.SetActive(false);
+            }
         }
+
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Collider HitBox;
-    public int health;
+    public float health;
     public bool chase;
     public bool shoot;
     public EnemyType type;
@@ -14,7 +14,13 @@ public class Enemy : MonoBehaviour
         CHASING,
         STATIONARY
     };
-
+    public enum EnemyWeakness
+    {
+        ALL,
+        HEAT,
+        ICE
+    };
+    public EnemyWeakness weakness;
     // Start is called before the first frame update
     void Start()
     {

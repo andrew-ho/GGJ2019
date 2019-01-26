@@ -10,7 +10,7 @@ public class TempControl : MonoBehaviour
     public PostProcessProfile postProcess;
 
     public Image image;
-    public float fill = 0;
+    public static float fill = 0;
     public float Velocity = 1.0f;
 
     // Start is called before the first frame update
