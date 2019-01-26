@@ -121,7 +121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100016, guid: fadf700899b8e0240b4d6be0d8ca991c, type: 3}
       propertyPath: m_Name
-      value: EnemyBat
+      value: DumbBat
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: fadf700899b8e0240b4d6be0d8ca991c, type: 3}
       propertyPath: m_IsActive
@@ -295,29 +295,20 @@ MonoBehaviour:
   health: 10
   chase: 0
   type: 0
-  speed: 500
---- !u!195 &84357304
-NavMeshAgent:
+  speed: 3
+--- !u!65 &84357304
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84357301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  serializedVersion: 2
+  m_Size: {x: 4, y: 20, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &92872560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1601,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1995749231}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1995749233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995749232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 20, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1995749234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,7 +1630,7 @@ MonoBehaviour:
   health: 10
   chase: 0
   type: 0
-  speed: 0
+  speed: 3
 --- !u!65 &1995749235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1674,6 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf7b025ce83afb45b90a6a693fedf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterHealth: 50
   moveSpeed: 30
   rb: {fileID: 2107654492}
 --- !u!114 &2107654494

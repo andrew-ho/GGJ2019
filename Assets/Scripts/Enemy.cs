@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        if (health <= 0)
+        if (health < 1)
         {
             Destroy(this.gameObject);
         }

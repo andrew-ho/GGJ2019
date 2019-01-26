@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public int characterHealth = 50;
+
     public float moveSpeed;
     public Rigidbody rb;
 
@@ -11,6 +13,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveVelocity;
 
     private Camera mainCamera;
+    private bool Invulnerable = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +26,21 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Invulnerable)
+        {
+            if (this.GetComponent<Renderer>().enabled == true)
+            {
+                this.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                this.GetComponent<Renderer>().enabled = true;
+            }
+        }
+        if (characterHealth < 1)
+        {
+            GameOver();
+        }
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput * moveSpeed;
 
@@ -43,5 +61,28 @@ public class Movement : MonoBehaviour
         //moveDirection = moveDirection.normalized;
         moveVelocity *= Time.deltaTime;
         rb.MovePosition(transform.position + moveVelocity);
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.GetComponent<BatEnemy>() != null)
+        {
+            characterHealth -= 5;
+            Invulnerable = true;
+            StartCoroutine(WaitForIt());
+        }
+
+        
+    }
+
+    IEnumerator WaitForIt()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Invulnerable = false;
+        this.GetComponent<Renderer>().enabled = true;
+    }
+    public void GameOver()
+    {
+
     }
 }
