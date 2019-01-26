@@ -8,17 +8,30 @@ public class BatEnemy : Enemy
     private Vector3 startPos;
     
     public int speed;
-
+    public int startSpeed;
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
+        startSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
         base.Update();
+        if (TempControl.fill == 0)
+        {
+            speed = startSpeed / 2;
+        }
+        else if (TempControl.fill == 1)
+        {
+            speed = startSpeed * 2;
+        }
+        else
+        {
+            speed = startSpeed;
+        }
         if (chase)
         {
             transform.LookAt(DataManager.Instance.Player.transform.position);
@@ -36,12 +49,26 @@ public class BatEnemy : Enemy
 
     void OnTriggerEnter(Collider collider)
     {
-        if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
-        {
-            health -= 1;
-            collider.gameObject.SetActive(false);
-            
-        }
+        
+         if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
+         {
+            if (TempControl.fill > 0 && TempControl.fill < 1)
+            {
+                health -= 1;
+                collider.gameObject.SetActive(false);
+            }
+            else if (TempControl.fill == 0)
+            {
+                health -= .5f;
+                collider.gameObject.SetActive(false);
+            }
+            else if (TempControl.fill == 1)
+            {
+                health -= 2f;
+                collider.gameObject.SetActive(false);
+            }
+         }
+
     }
 
 }

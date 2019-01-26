@@ -13,7 +13,7 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DataManager.Instance.Temperature.fill <= 0.3f)
+        if (TempControl.fill <= 0.3f)
         {
             Destroy(this.gameObject);
         }    
