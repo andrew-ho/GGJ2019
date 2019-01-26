@@ -7,6 +7,13 @@ public class Enemy : MonoBehaviour
     public Collider HitBox;
     public int health;
     public bool chase;
+
+    public enum EnemyType
+    {
+        CHASING,
+        STATIONARY
+    };
+
     // Start is called before the first frame update
     void Start()
     {
