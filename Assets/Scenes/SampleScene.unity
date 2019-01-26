@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 5c86305a57fc155438d7550b5c2bab34, type: 2}
 --- !u!1001 &63867021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,11 +1271,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492168813524779856, guid: 132d543f5acced04ca7c654e1440d5ef,
-        type: 3}
-      propertyPath: doNotRenderDoor
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 132d543f5acced04ca7c654e1440d5ef, type: 3}
