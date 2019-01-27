@@ -22,13 +22,13 @@ public class BatEnemy : Enemy
     {
         if (Invulnerable)
         {
-            if (this.GetComponent<Renderer>().enabled == true)
+            if (this.GetComponentInChildren<Renderer>().enabled == true)
             {
-                this.GetComponent<Renderer>().enabled = false;
+                this.GetComponentInChildren<Renderer>().enabled = false;
             }
             else
             {
-                this.GetComponent<Renderer>().enabled = true;
+                this.GetComponentInChildren<Renderer>().enabled = true;
             }
         }
         base.Update();
@@ -90,7 +90,7 @@ public class BatEnemy : Enemy
                 if (TempControl.fill < 0.2f)
                 {
                     Invulnerable = true;
-                    WaitForIt(0.5f);
+                    StartCoroutine(WaitForIt(0.5f));
                 }
             }
             else
@@ -105,7 +105,7 @@ public class BatEnemy : Enemy
     {
         yield return new WaitForSeconds(time);
         Invulnerable = false;
-        this.GetComponent<Renderer>().enabled = true;
+        this.GetComponentInChildren<Renderer>().enabled = true;
     }
 
 }
