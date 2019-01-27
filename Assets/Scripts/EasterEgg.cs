@@ -5,13 +5,9 @@ using TMPro;
 
 public class EasterEgg : MonoBehaviour
 {
-    float time = 20f;
+    public float time = 20f;
     public TextMeshProUGUI text;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject title;
 
     // Update is called once per frame
     void Update()
@@ -20,6 +16,10 @@ public class EasterEgg : MonoBehaviour
         if (time <= 0)
         {
             text.gameObject.SetActive(true);
+        }
+
+        if (!title.activeSelf) {
+            time = 20f;
         }
     }
 }
