@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour {
         rb.velocity = Vector3.zero;
 
         Vector3 bulletPosOnScreen = Camera.main.WorldToScreenPoint(transform.position);
+        bulletPosOnScreen = new Vector3(bulletPosOnScreen.x, bulletPosOnScreen.y, 0);
         float angle = Vector3.Angle(Input.mousePosition - bulletPosOnScreen, Vector3.right);
         float xForce = Mathf.Cos(Mathf.Deg2Rad * angle);
         float zForce = Mathf.Sin(Mathf.Deg2Rad * angle);
@@ -44,5 +45,14 @@ public class Bullet : MonoBehaviour {
         if (other.tag == "Enemy") {
             other.gameObject.GetComponent<Enemy>().health -= 1;
         }
+        print(other.name);
+        if (other.name != "EnemyTriggerZone") {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other) {
+        print(other);
+        this.gameObject.SetActive(false);
     }
 }
