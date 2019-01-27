@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EZ Object Pools\Scripts\EZObjectPool.cs" />
-    <Compile Include="Assets\EZ Object Pools\Scripts\PooledObjects\ParticleSystemDisable.cs" />
-    <Compile Include="Assets\EZ Object Pools\Scripts\PooledObjects\PooledObject.cs" />
-    <Compile Include="Assets\EZ Object Pools\Scripts\PooledObjects\TimedDisable.cs" />
+    <Compile Include="Assets\Custom Assets\EZ Object Pools\Scripts\EZObjectPool.cs" />
+    <Compile Include="Assets\Custom Assets\EZ Object Pools\Scripts\PooledObjects\ParticleSystemDisable.cs" />
+    <Compile Include="Assets\Custom Assets\EZ Object Pools\Scripts\PooledObjects\PooledObject.cs" />
+    <Compile Include="Assets\Custom Assets\EZ Object Pools\Scripts\PooledObjects\TimedDisable.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
