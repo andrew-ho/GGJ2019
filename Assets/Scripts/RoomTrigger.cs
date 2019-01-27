@@ -33,12 +33,14 @@ public class RoomTrigger : MonoBehaviour
                     {
                         Slime.SlimesToDie += 1;
                     }
+                    FirstCheck = false;
                 }
                 if (enemies[i] != null)
                 {
                     count++;
                 }
             }
+            Debug.Log(Slime.SlimesToDie);
             if (count == 0&&Slime.SlimesToDie==0)
             {
                 ExitEvent.Invoke();

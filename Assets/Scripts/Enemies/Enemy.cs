@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     public enum EnemyType
     {
         CHASING,
-        STATIONARY
+        STATIONARY,
     };
     public enum EnemyWeakness
     {

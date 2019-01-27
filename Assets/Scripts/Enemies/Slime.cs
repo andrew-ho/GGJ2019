@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
-    public static int SlimesToDie;
+    public static int SlimesToDie = 0;
     public GameObject SubSlime;
     public bool Large;
     private Vector3 startPos;
@@ -25,7 +25,7 @@ public class Slime : Enemy
     {
         if (health <= 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
             SlimesToDie -= 1;
         }
         if(health<=DivisionHealth&&Large)
@@ -51,4 +51,13 @@ public class Slime : Enemy
             this.transform.position = new Vector3(tempos.x, this.transform.position.y, tempos.z);
         }
     }
+    void OnTriggerEnter(Collider collider)
+    {
+        if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
+        {
+            health -= 1;
+            collider.gameObject.SetActive(false);
+        }
+    }
+
 }

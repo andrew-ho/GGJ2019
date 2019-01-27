@@ -110,6 +110,12 @@ public class Movement : MonoBehaviour
                 StartCoroutine(WaitForIt(0.5f));
 
             }
+            if(collision.collider.GetComponent<Slime>()!= null)
+            {
+                characterHealth -= collision.collider.GetComponent<Slime>().Damage;
+                Invulnerable = true;
+                StartCoroutine(WaitForIt(0.5f));
+            }
         }
     }
 

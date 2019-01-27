@@ -2589,10 +2589,10 @@ MonoBehaviour:
   health: 3
   chase: 0
   shoot: 0
-  type: 0
+  type: 2
   weakness: 0
   SubSlime: {fileID: 0}
-  Large: 1
+  Large: 0
   speed: 2
   startSpeed: 2
   DivisionHealth: 0
@@ -2605,11 +2605,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354200602}
   m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 50, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &354200605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354200602}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8511462, y: 3.195744, z: 2.8511467}
-  m_Center: {x: 0.000000059604645, y: 0.27754068, z: 0}
+  m_Size: {x: 3, y: 50, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &372153322
 PrefabInstance:
   m_ObjectHideFlags: 0
