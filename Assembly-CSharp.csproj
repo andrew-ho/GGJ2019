@@ -83,10 +83,12 @@
     <Compile Include="Assets\Scripts\Enemies\Ghost.cs" />
     <Compile Include="Assets\Scripts\Enemies\Slime.cs" />
     <Compile Include="Assets\Scripts\Enemies\Turret.cs" />
+    <Compile Include="Assets\Scripts\FinalScoreText.cs" />
     <Compile Include="Assets\Scripts\Fire.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\RoomTrigger.cs" />
     <Compile Include="Assets\Scripts\TempControl.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />

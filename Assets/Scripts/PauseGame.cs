@@ -9,6 +9,10 @@ public class PauseGame : MonoBehaviour {
 	public GameObject pauseMenu;
     public GameObject youWin;
 
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Cancel")) {
@@ -36,6 +40,7 @@ public class PauseGame : MonoBehaviour {
     public void RestartGame() {
         gamePaused = false;
         Time.timeScale = 1;
+        Slime.SlimesToDie = 0;
         SceneManager.LoadScene("SceneWithFurniture");
     }
 
