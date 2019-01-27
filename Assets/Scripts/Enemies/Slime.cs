@@ -19,7 +19,7 @@ public class Slime : Enemy
     void Start()
     {
         startPos = transform.position;
-        startSpeed = speed;
+        startSpeed = speed * (Random.value+0.2f);
         RealNumSlimesOnDeath = NumSlimesOnDeath;
     }
     
@@ -43,7 +43,7 @@ public class Slime : Enemy
         {
             for(int i = 0; i < RealNumSlimesOnDeath; i++)
             {
-                GameObject slime1 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(4*Random.value-2.0f, SubSlime.transform.position.y, 4*Random.value-2.0f), Quaternion.identity);
+                GameObject slime1 = Object.Instantiate(SubSlime, new Vector3(this.transform.position.x,0,this.transform.position.z) + new Vector3(4*Random.value-2.0f, SubSlime.transform.position.y, 4*Random.value-2.0f), Quaternion.identity);
                 slime1.SetActive(true);
                 slime1.GetComponent<Slime>().chase = true;
                 SlimesToDie += 1;
