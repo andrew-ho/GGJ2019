@@ -30,10 +30,14 @@ public class Slime : Enemy
         }
         if(health<=DivisionHealth&&Large)
         {
-            Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
-            Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
+            GameObject slime1 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
+            GameObject slime2 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
+            slime1.SetActive(true);
+            slime2.SetActive(true);
+            slime1.GetComponent<Slime>().chase = true;
+            slime2.GetComponent<Slime>().chase = true;
             SlimesToDie += 1;
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         
 
