@@ -12,6 +12,7 @@ public class PauseGame : MonoBehaviour {
     private void Start()
     {
         Time.timeScale = 1;
+        Timer.timer = 240;
     }
     // Update is called once per frame
     void Update() {
