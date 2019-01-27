@@ -2503,7 +2503,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
       propertyPath: m_Name
-      value: Slime_new
+      value: SmallSlime
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2511,7 +2511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2549,6 +2549,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 04f5dcdcd8f9b95428c41fc9b1d5630c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2574,16 +2586,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitBox: {fileID: 0}
-  health: 10
+  health: 3
   chase: 0
   shoot: 0
   type: 0
   weakness: 0
   SubSlime: {fileID: 0}
-  SuperLarge: 0
   Large: 1
-  speed: 1
-  startSpeed: 1
+  speed: 2
+  startSpeed: 2
+  DivisionHealth: 0
+  Damage: 2
 --- !u!65 &354200604
 BoxCollider:
   m_ObjectHideFlags: 0

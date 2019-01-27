@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Slime : Enemy
 {
+    public static int SlimesToDie;
     public GameObject SubSlime;
     public bool Large;
     private Vector3 startPos;
@@ -22,12 +23,19 @@ public class Slime : Enemy
     // Update is called once per frame
     void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(this);
+            SlimesToDie -= 1;
+        }
         if(health<=DivisionHealth&&Large)
         {
             Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
             Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
+            SlimesToDie += 1;
             Destroy(this);
         }
+        
 
         if (chase)
         {

@@ -10,6 +10,7 @@ public class RoomTrigger : MonoBehaviour
     public Enemy[] enemies;
     int numEnemies;
     private bool active;
+    private bool FirstCheck=true;
     private Camera cam;
     public GameObject roomView;
     // Start is called before the first frame update
@@ -26,12 +27,19 @@ public class RoomTrigger : MonoBehaviour
             int count = 0;
             for (int i = 0; i < enemies.Length; i++)
             {
+                if (FirstCheck)
+                {
+                    if (enemies[i].gameObject.GetComponent<Slime>() != false)
+                    {
+                        Slime.SlimesToDie += 1;
+                    }
+                }
                 if (enemies[i] != null)
                 {
                     count++;
                 }
             }
-            if (count == 0)
+            if (count == 0&&Slime.SlimesToDie==0)
             {
                 ExitEvent.Invoke();
             }
