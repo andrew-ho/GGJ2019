@@ -15,11 +15,11 @@ public class Movement : MonoBehaviour
     private Camera mainCamera;
     private bool Invulnerable = false;
 
-    public Vector3 Velocity = Vector3.zero;
-    public Vector3 PreviousPosition;
 
-    private float time = 99f;
+    private float time = 0.0f;
     private bool dashing;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,11 +49,15 @@ public class Movement : MonoBehaviour
         }
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput * moveSpeed;
-        if (Input.GetButton("Fire2")&&time>1.5f) {
-            time = 0;
-            
+
+        if (Input.GetButton("Fire2")&&time<0.0f) {
+            time = 1.5f;
+            dashing = true;
+            WaitForIt(0.5f);
         }
-      
+        
+
+        
 
         Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
@@ -64,7 +68,7 @@ public class Movement : MonoBehaviour
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
 
-        time += Time.deltaTime;
+        time -= Time.deltaTime;
     }
 
     private void FixedUpdate()
@@ -73,8 +77,14 @@ public class Movement : MonoBehaviour
         //Vector3 moveDirection = moveVelocity;
         //moveDirection = moveDirection.normalized;
         moveVelocity *= Time.deltaTime;
-        this.transform.position += moveVelocity;
-        Velocity = moveVelocity;
+        if (time > 1.0f)
+        {
+            this.transform.position += moveVelocity + 50*transform.forward*Time.deltaTime; 
+        }
+        else
+        {
+            this.transform.position += moveVelocity;
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -83,7 +93,7 @@ public class Movement : MonoBehaviour
         {
             characterHealth -= 5;
             Invulnerable = true;
-            StartCoroutine(WaitForIt());
+            StartCoroutine(WaitForIt(1.0f));
         }
         if (collision.collider.GetComponent<Fire>() != null)
         {
@@ -93,9 +103,9 @@ public class Movement : MonoBehaviour
         
     }
 
-    IEnumerator WaitForIt()
+    IEnumerator WaitForIt(float time)
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(time);
         Invulnerable = false;
         this.GetComponent<Renderer>().enabled = true;
         dashing = false;
