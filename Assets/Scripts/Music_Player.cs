@@ -10,6 +10,8 @@ public class Music_Player : MonoBehaviour {
     public AudioClip thirdClip;
     bool fightingBoss = false;
 
+    public GameObject pauseManager;
+
 	// Use this for initialization
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
@@ -17,7 +19,7 @@ public class Music_Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!fightingBoss && !audioSource.isPlaying) {
+		if (!fightingBoss && !audioSource.isPlaying && !pauseManager.GetComponent<PauseGame>().gamePaused) {
             audioSource.clip = otherClip;
             audioSource.Play();
             audioSource.loop = true;

@@ -8,6 +8,7 @@ public class PauseGame : MonoBehaviour {
 	public bool gamePaused = false;
 	public GameObject pauseMenu;
     public GameObject youWin;
+    public GameObject music;
 
     private void Start()
     {
@@ -22,11 +23,13 @@ public class PauseGame : MonoBehaviour {
         		gamePaused = true;
         		//Cursor.visible = true;
         		pauseMenu.SetActive(true);
+                music.GetComponent<Music_Player>().PauseMusic();
         	} else {
         		pauseMenu.SetActive(false);
         		//Cursor.visible = false;
         		gamePaused = false;
         		Time.timeScale = 1;
+                music.GetComponent<Music_Player>().ResumeMusic();
         	}
         }
     }
@@ -52,6 +55,7 @@ public class PauseGame : MonoBehaviour {
     }
 
     public void YouWin() {
+        music.GetComponent<Music_Player>().PauseMusic();
         Time.timeScale = 0;
         //Cursor.visible = true;
         youWin.SetActive(true);

@@ -22,6 +22,7 @@ public class Movement : MonoBehaviour
     public float yPos;
 
     public GameObject gameOverMenu;
+    public GameObject music;
 
     // Start is called before the first frame update
     void Start()
@@ -142,6 +143,7 @@ public class Movement : MonoBehaviour
 
     public void GameOver()
     {
+        music.GetComponent<Music_Player>().PauseMusic();
         Time.timeScale = 0;
         //Cursor.visible = true;
         gameOverMenu.SetActive(true);
