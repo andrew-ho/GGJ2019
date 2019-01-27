@@ -10,7 +10,7 @@ public class RoomTrigger : MonoBehaviour
     public Enemy[] enemies;
     int numEnemies;
     private bool active;
-    private bool FirstCheck=true;
+    private bool FirstCheck = true;
     private Camera cam;
     public GameObject roomView;
     // Start is called before the first frame update
@@ -31,15 +31,17 @@ public class RoomTrigger : MonoBehaviour
                 {
                     if (enemies[i].gameObject.GetComponent<Slime>() != false)
                     {
+                        Debug.Log("hio");
                         Slime.SlimesToDie += 1;
                     }
-                    FirstCheck = false;
+                    
                 }
                 if (enemies[i] != null)
                 {
                     count++;
                 }
             }
+            FirstCheck = false;
             Debug.Log(Slime.SlimesToDie);
             if (count == 0&&Slime.SlimesToDie==0)
             {
