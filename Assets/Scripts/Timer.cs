@@ -19,6 +19,6 @@ public class Timer : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timer = Mathf.Clamp(timer, 0, timer);
-        text.text = timer.ToString();
+        text.text = timer.ToString("F2");
     }
 }
