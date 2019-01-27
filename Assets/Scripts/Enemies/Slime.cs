@@ -51,7 +51,14 @@ public class Slime : Enemy
             SlimesToDie -= 1;
             Destroy(this.gameObject);
         }
-        
+        if (TempControl.fill <= 0.1f)
+        {
+            speed = 0.0f;
+        }
+        else
+        {
+            speed = startSpeed;
+        }
 
         if (chase)
         {
@@ -71,7 +78,10 @@ public class Slime : Enemy
     {
         if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
         {
-            health -= 1;
+            if (TempControl.fill > 0.1f)
+            {
+                health -= 1;
+            }
             collider.gameObject.SetActive(false);
         }
     }
