@@ -119,6 +119,13 @@ public class Movement : MonoBehaviour
                 Invulnerable = true;
                 StartCoroutine(WaitForIt(0.5f));
             }
+            if (collision.collider.GetComponent<Ghost>() != null)
+            {
+                characterHealth -= 5;
+                Invulnerable = true;
+                StartCoroutine(WaitForIt(0.5f));
+            }
+        
         }
     }
 
