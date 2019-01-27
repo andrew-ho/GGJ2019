@@ -4,5 +4,5 @@
 /Logs
 /Temp/ProcessJobs
 *.sln
-.vs/GGJ2019/v15/Server
+.vs/
 obj/Debug
