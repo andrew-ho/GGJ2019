@@ -13,7 +13,7 @@ public class Turret : Enemy
     void Awake()
     {
         //Object pool parameters: (object, name of pool, starting pool size, auto resize (should be true), instantiate immediate (should be true), shared pools)
-        enemyBulletPool = EZObjectPool.CreateObjectPool(enemyBullets, "EnemyBullets", 30, true, true, true);
+        enemyBulletPool = EZObjectPool.CreateObjectPool(enemyBullets, "EnemyBullets", 300, true, true, true);
     }
 
     // Start is called before the first frame update
@@ -25,13 +25,14 @@ public class Turret : Enemy
     // Update is called once per frame
     void Update()
     {
+        base.Update();
         if (TempControl.fill == 0)
         {
             shotDelay = .6f;
         }
         else if (TempControl.fill == 1)
         {
-            shotDelay = .01f;
+            shotDelay = .05f;
         }
         else
         {
@@ -49,10 +50,10 @@ public class Turret : Enemy
     {
         Transform target = DataManager.Instance.Player.transform;
         Vector3 targetPostition = new Vector3(target.position.x,
-                                       this.transform.position.y,
+                                       transform.position.y,
                                        target.position.z);
         this.transform.GetChild(1).LookAt(targetPostition);
-        enemyBulletPool.TryGetNextObject(transform.position + (3.0f * transform.GetChild(1).forward), transform.GetChild(1).rotation);
+        enemyBulletPool.TryGetNextObject(transform.GetChild(1).position + (3.0f * transform.GetChild(1).forward), transform.GetChild(1).rotation);
     }
 
     void OnCollisionEnter(Collision collision)
