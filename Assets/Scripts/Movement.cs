@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
 
     public float yPos;
 
+    public GameObject gameOverMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -140,6 +142,8 @@ public class Movement : MonoBehaviour
 
     public void GameOver()
     {
-
+        Time.timeScale = 0;
+        //Cursor.visible = true;
+        gameOverMenu.SetActive(true);
     }
 }

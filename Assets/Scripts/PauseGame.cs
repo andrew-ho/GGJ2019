@@ -7,6 +7,7 @@ public class PauseGame : MonoBehaviour {
 
 	public bool gamePaused = false;
 	public GameObject pauseMenu;
+    public GameObject youWin;
 
     // Update is called once per frame
     void Update() {
@@ -42,5 +43,11 @@ public class PauseGame : MonoBehaviour {
         gamePaused = false;
         Time.timeScale = 1;
         SceneManager.LoadScene("Title");
+    }
+
+    public void YouWin() {
+        Time.timeScale = 0;
+        //Cursor.visible = true;
+        youWin.SetActive(true);
     }
 }
