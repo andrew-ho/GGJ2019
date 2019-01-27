@@ -32,4 +32,12 @@ public class Music_Player : MonoBehaviour {
 	        audioSource.loop = true;
 		}
 	}
+
+	public void PauseMusic() {
+		audioSource.Pause();
+	}
+
+	public void ResumeMusic() {
+		audioSource.Play();
+	}
 }
