@@ -89,18 +89,28 @@ public class Movement : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.GetComponent<BatEnemy>() != null)
+        if (!Invulnerable)
         {
-            characterHealth -= 5;
-            Invulnerable = true;
-            StartCoroutine(WaitForIt(1.0f));
+            if (collision.collider.GetComponent<BatEnemy>() != null)
+            {
+                characterHealth -= 5;
+                Invulnerable = true;
+                StartCoroutine(WaitForIt(1.0f));
+            }
+            if (collision.collider.GetComponent<Fire>() != null)
+            {
+                characterHealth -= 5;
+                Destroy(collision.gameObject);
+            }
+            if(collision.collider.gameObject.layer == 11)
+            {
+                characterHealth -= 3;
+                Destroy(collision.gameObject);
+                Invulnerable = true;
+                StartCoroutine(WaitForIt(0.5f));
+
+            }
         }
-        if (collision.collider.GetComponent<Fire>() != null)
-        {
-            characterHealth -= 5;
-            Destroy(collision.gameObject);
-        }
-        
     }
 
     IEnumerator WaitForIt(float time)

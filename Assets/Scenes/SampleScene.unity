@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1263,28 +1263,6 @@ MonoBehaviour:
   weakness: 0
   speed: 500
   startSpeed: 0
---- !u!195 &84357304
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84357301}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &92872560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8592,6 +8570,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1995749231}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1995749233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995749232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 20, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1995749234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9440,8 +9431,6 @@ MonoBehaviour:
   characterHealth: 50
   moveSpeed: 30
   rb: {fileID: 2107654492}
-  Velocity: {x: 0, y: 0, z: 0}
-  PreviousPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2107654494
 MonoBehaviour:
   m_ObjectHideFlags: 0
