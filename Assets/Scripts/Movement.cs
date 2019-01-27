@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour
                 characterHealth -= 5;
                 Destroy(collision.gameObject);
             }
-            if(collision.collider.gameObject.layer == 11)
+            if(LayerMask.LayerToName(collision.collider.gameObject.layer) == "EnemyBullet")
             {
                 characterHealth -= 3;
                 Destroy(collision.gameObject);
