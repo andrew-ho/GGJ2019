@@ -45,11 +45,11 @@ public class BatEnemy : Enemy
             speed = startSpeed;
         }else if (TempControl.fill < 1)
         {
-            speed = startSpeed * 1.5f;
+            speed = startSpeed * 2.0f;
         }
         else
         {
-            speed = startSpeed * 2;
+            speed = startSpeed * 3.0f;
         }
         if (chase)
         {

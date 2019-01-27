@@ -30,6 +30,10 @@ public class Slime : Enemy
         {
             RealNumSlimesOnDeath = NumSlimesOnDeath + 2;
         }
+        else
+        {
+            RealNumSlimesOnDeath = NumSlimesOnDeath;
+        }
         if (health <= 0)
         {
             Destroy(this.gameObject);
