@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     private float time = 0.0f;
     private bool dashing;
 
-
+    public float yPos;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +27,13 @@ public class Movement : MonoBehaviour
         DataManager.Instance.Player = this.gameObject;
         rb = GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>();
+        yPos = transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
         if (Invulnerable&&!dashing)
         {
             if (this.GetComponent<Renderer>().enabled == true)
@@ -105,7 +107,8 @@ public class Movement : MonoBehaviour
             if(LayerMask.LayerToName(collision.collider.gameObject.layer) == "EnemyBullet")
             {
                 characterHealth -= 3;
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
+                collision.gameObject.SetActive(false);
                 Invulnerable = true;
                 StartCoroutine(WaitForIt(0.5f));
 

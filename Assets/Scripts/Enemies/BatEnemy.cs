@@ -7,8 +7,9 @@ public class BatEnemy : Enemy
 {
     private Vector3 startPos;
     
-    public int speed;
-    public int startSpeed;
+    public float speed;
+    public float startSpeed;
+    public bool Invulnerable;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,19 +20,36 @@ public class BatEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
-        
+        if (Invulnerable)
+        {
+            if (this.GetComponent<Renderer>().enabled == true)
+            {
+                this.GetComponent<Renderer>().enabled = false;
+            }
+            else
+            {
+                this.GetComponent<Renderer>().enabled = true;
+            }
+        }
         base.Update();
         if (TempControl.fill == 0)
         {
             speed = startSpeed / 2;
         }
-        else if (TempControl.fill == 1)
+        else if (TempControl.fill < 0.2f)
         {
-            speed = startSpeed * 2;
+            speed = startSpeed/1.5f;
+        }
+        else if(TempControl.fill<0.8f)
+        {
+            speed = startSpeed;
+        }else if (TempControl.fill < 1)
+        {
+            speed = startSpeed * 1.5f;
         }
         else
         {
-            speed = startSpeed;
+            speed = startSpeed * 2;
         }
         if (chase)
         {
@@ -52,24 +70,43 @@ public class BatEnemy : Enemy
     {
         
          if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
-         {
-            if (TempControl.fill > 0 && TempControl.fill < 1)
-            {
-                health -= 1;
-                collider.gameObject.SetActive(false);
+        {
+            if (!Invulnerable) {
+                if (TempControl.fill > 0 && TempControl.fill < 1)
+                {
+                    health -= 1;
+                    collider.gameObject.SetActive(false);
+                }
+                else if (TempControl.fill == 0)
+                {
+                    health -= .5f;
+                    collider.gameObject.SetActive(false);
+                }
+                else if (TempControl.fill == 1)
+                {
+                    health -= 2f;
+                    collider.gameObject.SetActive(false);
+                }
+                if (TempControl.fill < 0.2f)
+                {
+                    Invulnerable = true;
+                    WaitForIt(0.5f);
+                }
             }
-            else if (TempControl.fill == 0)
+            else
             {
-                health -= .5f;
-                collider.gameObject.SetActive(false);
-            }
-            else if (TempControl.fill == 1)
-            {
-                health -= 2f;
                 collider.gameObject.SetActive(false);
             }
          }
 
     }
 
+    IEnumerator WaitForIt(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Invulnerable = false;
+        this.GetComponent<Renderer>().enabled = true;
+    }
+
 }
+
