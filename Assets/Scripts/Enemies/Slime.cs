@@ -9,20 +9,31 @@ public class Slime : Enemy
     public bool Large;
     private Vector3 startPos;
 
-    public int speed;
-    public int startSpeed;
+    public float speed;
+    public float startSpeed;
     public int DivisionHealth;
     public int Damage;
+    public int NumSlimesOnDeath = 2;
+    private int RealNumSlimesOnDeath;
     // Start is called before the first frame update
     void Start()
     {
         startPos = transform.position;
         startSpeed = speed;
+        RealNumSlimesOnDeath = NumSlimesOnDeath;
     }
     
     // Update is called once per frame
     void Update()
     {
+        if (TempControl.fill >= 0.4f && TempControl.fill <= 0.6f)
+        {
+            RealNumSlimesOnDeath = NumSlimesOnDeath + 2;
+        }
+        else
+        {
+            RealNumSlimesOnDeath = NumSlimesOnDeath;
+        }
         if (health <= 0)
         {
             Destroy(this.gameObject);
@@ -30,23 +41,31 @@ public class Slime : Enemy
         }
         if(health<=DivisionHealth&&Large)
         {
-            GameObject slime1 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
-            GameObject slime2 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(0.5f - Random.value, SubSlime.transform.position.y, 0.5f - Random.value), Quaternion.identity);
-            slime1.SetActive(true);
-            slime2.SetActive(true);
-            slime1.GetComponent<Slime>().chase = true;
-            slime2.GetComponent<Slime>().chase = true;
-            SlimesToDie += 1;
+            for(int i = 0; i < RealNumSlimesOnDeath; i++)
+            {
+                GameObject slime1 = Object.Instantiate(SubSlime, this.transform.position + new Vector3(4*Random.value-2.0f, SubSlime.transform.position.y, 4*Random.value-2.0f), Quaternion.identity);
+                slime1.SetActive(true);
+                slime1.GetComponent<Slime>().chase = true;
+                SlimesToDie += 1;
+            }
+            SlimesToDie -= 1;
             Destroy(this.gameObject);
         }
-        
+        if (TempControl.fill <= 0.1f)
+        {
+            speed = 0.0f;
+        }
+        else
+        {
+            speed = startSpeed;
+        }
 
         if (chase)
         {
             transform.LookAt(DataManager.Instance.Player.transform.position);
             Vector3 EnemyPosition = this.transform.position;
             Vector3 position = DataManager.Instance.Player.transform.position;
-            Vector2 CartesianPosition = Vector2.Lerp(new Vector2(EnemyPosition.x, EnemyPosition.z), new Vector2(position.x, position.z), Time.deltaTime * speed);
+            Vector2 CartesianPosition = Vector2.Lerp(new Vector2(EnemyPosition.x, EnemyPosition.z), new Vector2(position.x, position.z), Time.deltaTime * speed * (Random.value+0.2f));
             this.transform.position = new Vector3(CartesianPosition.x, EnemyPosition.y, CartesianPosition.y);
         }
         else
@@ -59,7 +78,10 @@ public class Slime : Enemy
     {
         if (LayerMask.LayerToName(collider.gameObject.layer) == "Bullet")
         {
-            health -= 1;
+            if (TempControl.fill > 0.1f)
+            {
+                health -= 1;
+            }
             collider.gameObject.SetActive(false);
         }
     }

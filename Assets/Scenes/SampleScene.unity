@@ -1267,6 +1267,7 @@ MonoBehaviour:
   weakness: 0
   speed: 500
   startSpeed: 0
+  Invulnerable: 0
 --- !u!1 &92872560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2370,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &209519029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1459208351, guid: b1efb8a52f0d8ae48960fd44eed7fdce,
+    type: 3}
+  m_PrefabInstance: {fileID: 1461339273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &209519030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209519029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8511462, y: 3.195744, z: 2.8511467}
+  m_Center: {x: 0.000000059604645, y: 0.27754068, z: 0}
 --- !u!1 &284807573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,6 +3135,11 @@ PrefabInstance:
       propertyPath: SubSlime
       value: 
       objectReference: {fileID: 1461339274}
+    - target: {fileID: 1371912978791122362, guid: e1c6659665609a2479eca6f0f29e18ea,
+        type: 3}
+      propertyPath: NumSlimesOnDeath
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c6659665609a2479eca6f0f29e18ea, type: 3}
 --- !u!4 &504039779 stripped
@@ -9632,6 +9657,7 @@ MonoBehaviour:
   weakness: 0
   speed: 3
   startSpeed: 0
+  Invulnerable: 0
 --- !u!65 &1995749235
 BoxCollider:
   m_ObjectHideFlags: 0

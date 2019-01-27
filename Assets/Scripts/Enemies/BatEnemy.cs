@@ -10,6 +10,7 @@ public class BatEnemy : Enemy
     public float speed;
     public float startSpeed;
     public bool Invulnerable;
+    public bool Hurt;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +23,13 @@ public class BatEnemy : Enemy
     {
         if (Invulnerable)
         {
-            if (this.GetComponent<Renderer>().enabled == true)
+            if (this.GetComponentInChildren<Renderer>().enabled == true)
             {
-                this.GetComponent<Renderer>().enabled = false;
+                this.GetComponentInChildren<Renderer>().enabled = false;
             }
             else
             {
-                this.GetComponent<Renderer>().enabled = true;
+                this.GetComponentInChildren<Renderer>().enabled = true;
             }
         }
         base.Update();
@@ -45,11 +46,15 @@ public class BatEnemy : Enemy
             speed = startSpeed;
         }else if (TempControl.fill < 1)
         {
-            speed = startSpeed * 1.5f;
+            speed = startSpeed * 2.0f;
         }
         else
         {
-            speed = startSpeed * 2;
+            speed = startSpeed * 3.0f;
+        }
+        if (Hurt)
+        {
+            speed = Mathf.Clamp(((speed-1.0f)/3.0f),0.1f,10.0f);
         }
         if (chase)
         {
@@ -90,7 +95,15 @@ public class BatEnemy : Enemy
                 if (TempControl.fill < 0.2f)
                 {
                     Invulnerable = true;
-                    WaitForIt(0.5f);
+                    StartCoroutine(WaitForIt(0.5f));
+                }
+                if (TempControl.fill > 0.8f && Hurt == false)
+                {
+                    Hurt = true;
+                }
+                else
+                {
+                    Hurt = false;
                 }
             }
             else
@@ -105,7 +118,7 @@ public class BatEnemy : Enemy
     {
         yield return new WaitForSeconds(time);
         Invulnerable = false;
-        this.GetComponent<Renderer>().enabled = true;
+        this.GetComponentInChildren<Renderer>().enabled = true;
     }
 
 }
