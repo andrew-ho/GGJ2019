@@ -52,7 +52,10 @@ public class Bullet : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision other) {
-        print(other);
-        this.gameObject.SetActive(false);
+        
+        if (other.gameObject.GetComponent<Ghost>() == null) {
+            print(other);
+            this.gameObject.SetActive(false);
+        }
     }
 }
