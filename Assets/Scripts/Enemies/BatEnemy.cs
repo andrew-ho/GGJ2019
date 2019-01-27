@@ -10,6 +10,7 @@ public class BatEnemy : Enemy
     public float speed;
     public float startSpeed;
     public bool Invulnerable;
+    public bool Hurt;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +52,10 @@ public class BatEnemy : Enemy
         {
             speed = startSpeed * 3.0f;
         }
+        if (Hurt)
+        {
+            speed = Mathf.Clamp(((speed-1.0f)/3.0f),0.1f,10.0f);
+        }
         if (chase)
         {
             transform.LookAt(DataManager.Instance.Player.transform.position);
@@ -91,6 +96,14 @@ public class BatEnemy : Enemy
                 {
                     Invulnerable = true;
                     StartCoroutine(WaitForIt(0.5f));
+                }
+                if (TempControl.fill > 0.8f && Hurt == false)
+                {
+                    Hurt = true;
+                }
+                else
+                {
+                    Hurt = false;
                 }
             }
             else
