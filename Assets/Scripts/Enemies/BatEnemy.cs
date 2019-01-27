@@ -19,6 +19,7 @@ public class BatEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
+        
         base.Update();
         if (TempControl.fill == 0)
         {

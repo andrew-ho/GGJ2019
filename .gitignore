@@ -6,3 +6,6 @@
 *.sln
 .vs/
 obj/Debug
+.vs/GGJ2019/v15/Server/sqlite3/storage.ide
+.vs/GGJ2019/v15/Server/sqlite3/storage.ide-wal
+.vs/GGJ2019/v15/Server/sqlite3/storage.ide-shm
